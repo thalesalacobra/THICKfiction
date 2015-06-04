@@ -1,3 +1,5 @@
 # THICKfiction
-site to host personal fiction and poetry
-+created wireframes for mobile and desktop
+/*
+This site will be a host for my personal fiction and poetry.
+Wireframes created for site. HTML soon to be uploaded.
+*/
