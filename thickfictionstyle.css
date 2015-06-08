@@ -1,0 +1,100 @@
+/******
+FONTS
+*******/
+
+@font-face {
+	font-family: 'ELBOP';
+	src: url('fonts/ELBOP__.otf');
+	src: local('ELBOP Regular'), local('ELBOP'), url('fonts/ELBOP__.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('fonts/HelveticaNeueLTStd-55-roman.otf');
+    src: local('Helvetica Regular'), local('Helvetica'), url(fonts/;HelveticaNeueLTStd-55-roman.otf) format('opentype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('fonts/HelveticaNeueLTStd-BdCn.otf');
+    src: local('Helvetica Bold'), local('Helvetica'), url(fonts/;HelveticaNeueLTStd-BdCn.otf) format('opentype');
+    font-weight:bold;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('fonts/HelveticaNeueLTStd-BdCnO.otf');
+    src: local('Helvetica Regular'), local('Helvetica'), url(fonts/;HelveticaNeueLTStd-BdCnO.otf) format('opentype');
+    font-weight:bold;
+    font-style:italic;
+}
+
+
+/*******************
+HEADING & NAVIGATION
+********************/
+
+header {
+    padding: 5px;
+    margin-bottom: 0px;
+}
+
+header {
+    /*Update img to solid black background.*/
+    background-image: url('../img/braininspace.jpg');
+    background-repeat: no-repeat;
+    background-size: 122px 122px;
+    background-position: right;
+    background-color: black;
+}
+
+
+h1 {
+    font-family: 'ELBOP';
+    font-size:4.5em;
+    color: white;
+    display:inline-block;
+    padding:5px 0 -10px 5px;
+    margin: 20px 0 -15px 20px;
+}
+
+h2 {
+    font-family: 'Permanent Marker';
+    font-weight:bold;
+    font-size:3.8em;
+    color: white;
+    display:inline-block;
+    padding: px 0 -10px 20px;
+    margin: 20px 0 -15px 0;
+}
+
+h3 {
+    font-family: 'Amatic SC';
+    font-size:1.7em;
+    color: white;
+    padding-top: -10px;
+    padding-bottom: 5px;
+    padding-left: 75px;
+    margin: -5px 0 25px 20px;
+}
+
+nav ul {
+    font-family: "Helvetica";
+    font-size: 0.85em;
+    list-style: none;
+    margin: -40px 25px 10px 780px;
+    padding: 5;
+    float: inherit;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-weight: 800;
+  padding: 15px 7px 0 0;
+}
