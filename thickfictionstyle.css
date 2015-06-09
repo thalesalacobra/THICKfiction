@@ -40,46 +40,56 @@ HEADING & NAVIGATION
 header {
     padding: 5px;
     margin-bottom: 0px;
+    border-style: double;
+    border-width: 10px;
+    border-color: white;
+    box-shadow: 10px 10px 5px #888888;
 }
 
 header {
-    /*Update img to solid black background.*/
     background-image: url('../img/braininspace.jpg');
     background-repeat: no-repeat;
-    background-size: 122px 122px;
-    background-position: right;
-    background-color: black;
+    background-size: 130px 130px;
+    background-position: 97% 67%;
+    background-color: #04010A;
 }
 
 
-h1 {
-    font-family: 'ELBOP';
+#thick {
+    font-family: 'ELBOP', 'Helvetica';
     font-size:4.5em;
+    font-weight:bolder;
     color: white;
     display:inline-block;
-    padding:5px 0 -10px 5px;
+    padding:2px 0 -10px 5px;
     margin: 20px 0 -15px 20px;
 }
 
-h2 {
-    font-family: 'Permanent Marker';
+#fiction {
+    font-family: 'Permanent Marker', 'Helvetica';
     font-weight:bold;
     font-size:3.8em;
     color: white;
     display:inline-block;
-    padding: px 0 -10px 20px;
+    padding: 2px 0 -10px 20px;
     margin: 20px 0 -15px 0;
 }
 
-h3 {
-    font-family: 'Amatic SC';
+#tag {
+    font-family: 'Amatic SC', 'Helvetica';
     font-size:1.7em;
     color: white;
-    padding-top: -10px;
-    padding-bottom: 5px;
+    padding-top: 0px;
+    padding-bottom: 2px;
     padding-left: 75px;
-    margin: -5px 0 25px 20px;
+    margin: 1px 0 15px 20px;
 }
+
+/**********
+NAVIGATION
+**********/
+
+/*HEADER NAV*/
 
 nav ul {
     font-family: "Helvetica";
@@ -97,4 +107,49 @@ nav li {
 nav a {
   font-weight: 800;
   padding: 15px 7px 0 0;
+}
+
+nav a, nav a:visited {
+  color: white;
+}
+
+nav .selected, nav a:hover {
+  color: gray;
+}
+
+
+/*SIDEBAR NAV*/
+
+#sidebar li {
+    font-family: 'Amatic SC';
+    font-weight:bold;
+    font-size:2em;
+    color:white;
+     text-align: center;
+    list-style:none;
+    float:inherit;
+    background-color: #04010A;
+    max-width: 17%;
+    padding-bottom: 12px;
+}
+
+#sidbar li.selected, #sidebar li:hover {
+    text-decoration: underline;
+}
+
+#sidebar ul {
+    position: fixed;
+    height: 100%;
+    max-width: 35%;
+    background-color: #04010A;
+    padding-top: 65px;
+    padding-right: 35px;
+    margin-top: -11px;
+    margin-right: 35px;
+    border-style: double;
+    border-width: 10px;
+    border-color: white;
+    border-top: hidden;
+    border-right: hidden;
+    box-shadow: 10px 10px 5px #888888;
 }
