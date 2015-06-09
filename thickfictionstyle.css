@@ -44,9 +44,6 @@ header {
     border-width: 10px;
     border-color: white;
     box-shadow: 10px 10px 5px #888888;
-}
-
-header {
     background-image: url('../img/braininspace.jpg');
     background-repeat: no-repeat;
     background-size: 130px 130px;
@@ -54,9 +51,8 @@ header {
     background-color: #04010A;
 }
 
-
 #thick {
-    font-family: 'ELBOP', 'Helvetica';
+    font-family: 'ELBOP', 'Helvetica', 'Roboto';
     font-size:4.5em;
     font-weight:bolder;
     color: white;
@@ -66,7 +62,7 @@ header {
 }
 
 #fiction {
-    font-family: 'Permanent Marker', 'Helvetica';
+    font-family: 'Permanent Marker', 'Helvetica', 'Robot';
     font-weight:bold;
     font-size:3.8em;
     color: white;
@@ -76,13 +72,18 @@ header {
 }
 
 #tag {
-    font-family: 'Amatic SC', 'Helvetica';
+    font-family: 'Amatic SC', 'Helvetica', 'Open Sans';
     font-size:1.7em;
     color: white;
     padding-top: 0px;
     padding-bottom: 2px;
     padding-left: 75px;
     margin: 1px 0 15px 20px;
+}
+
+#banner {
+    float:right;
+    clear:left;
 }
 
 /**********
@@ -92,7 +93,7 @@ NAVIGATION
 /*HEADER NAV*/
 
 nav ul {
-    font-family: "Helvetica";
+    font-family: 'Helvetica', 'Open Sans';
     font-size: 0.85em;
     list-style: none;
     margin: -40px 25px 10px 780px;
@@ -120,14 +121,32 @@ nav .selected, nav a:hover {
 
 /*SIDEBAR NAV*/
 
+#sidebar ul {
+    position: fixed;
+    /*max-height: 100%;*/
+    /*max-width: 35%;*/
+    background-color: #04010A;
+    padding-top: 13px;
+    padding-right: 35px;
+    margin-top: 0px;
+    margin-right: 35px;
+    border-style: outset;
+    border-width: 3px;
+    border-color: white;
+    border-top: hidden;
+    border-radius: 1em;
+    /*border-right: hidden;*/
+    border-bottom: hidden;
+    box-shadow: 10px 10px 5px #888888;
+}
+
 #sidebar li {
-    font-family: 'Amatic SC';
+    font-family: 'Amatic SC', 'Open Sans';
     font-weight:bold;
     font-size:2em;
     color:white;
-     text-align: center;
+    text-align: center;
     list-style:none;
-    float:inherit;
     background-color: #04010A;
     max-width: 17%;
     padding-bottom: 12px;
@@ -137,19 +156,69 @@ nav .selected, nav a:hover {
     text-decoration: underline;
 }
 
-#sidebar ul {
-    position: fixed;
-    height: 100%;
-    max-width: 35%;
-    background-color: #04010A;
-    padding-top: 65px;
-    padding-right: 35px;
-    margin-top: -11px;
-    margin-right: 35px;
-    border-style: double;
-    border-width: 10px;
-    border-color: white;
-    border-top: hidden;
-    border-right: hidden;
-    box-shadow: 10px 10px 5px #888888;
+#sidebar {
+    float:left;
+    clear:right;
+    height: auto;
+}
+
+
+/************
+BODY CONTENT
+************/
+
+#content {
+    background-image: url('../img/wrinklepaperbg.jpg');
+    background-repeat: repeat-y;
+    box-shadow: 8px 11px 21px -8px #858585;
+    float:right;
+    padding: 65px 40px 100px 40px;
+    margin: 60px 50px 60px 0;
+    max-width: 75%;
+}
+
+.piecetitle, .fictiontitle, .poemtitle {
+    font-family: 'Permanent Marker', 'Helvetica';
+    /*font-weight: bolder;*/
+    font-size: 3em;
+    padding-top: -15px;
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+.byline {
+    font-family: 'Amatic SC', 'Open Sans';
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: -55px;
+    margin-left: 45px;
+    text-align: justify;
+}
+
+.piecestuffing, .fictionstuffing, .poemstuffing {
+    font-family: 'Chivo', 'Helvetica', 'Roboto';
+    font-size: 1.15em;
+    padding: 5px;
+    margin: 10px;
+    text-align: justify;
+    
+}
+
+
+/*******
+FOOTER
+*******/
+
+#copy {
+    font-family: 'Covered By Your Grace', 'Helvetica', 'Open Sans';
+    font-weight: bold;
+    font-size:1.5em;
+    text-align:justify;
+    float:inherit;
+    clear: both;
+    padding: 5px 450px 0 450px;
+    margin-top: -100px;
+    margin-left: 150px;
+    bottom: 0;
+    left: 0;
 }
